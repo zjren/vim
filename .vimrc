@@ -36,15 +36,15 @@ set nobackup
 set noswapfile
 
 "突出现实当前行列
-"set cursorline
+set cursorline
 "set cursorcolumn
 
 "设置匹配模式 类似当输入一个左括号时会匹配相应的那个右括号
 set showmatch
 
 "设置C/C++方式自动对齐
-set autoindent
-set cindent
+"set autoindent
+"set cindent
 
 "开启语法高亮功能
 syntax enable
@@ -97,10 +97,18 @@ Bundle 'gmarik/vundle'
 
 "PowerLine插件 状态栏增强展示
 Bundle 'Lokaltog/vim-powerline'
+
+"目录插件
+Bundle 'scrooloose/nerdtree'
+
+Bundle 'taglist.vim'
+
+Bundle 'cespare/vim-golang'
+
+Bundle 'Blackrush/vim-gocode'
+
 "vim有一个状态栏 加上powline则有两个状态栏
 set laststatus=2
 set t_Co=256
 let g:Powline_symbols='fancy'
-
-"Vundle配置必须 开启插件
 filetype plugin indent on
